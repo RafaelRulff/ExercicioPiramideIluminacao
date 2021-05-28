@@ -15,6 +15,7 @@ double rotate_z=0;
 void specialkeys(int key, int x, int y)
 
 {
+
 if(key==GLUT_KEY_RIGHT)
 
     rotate_y-=5;
@@ -46,6 +47,7 @@ glutPostRedisplay();
 void display()
 
 {
+
 glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 glLoadIdentity();
@@ -130,6 +132,7 @@ glutSwapBuffers();
 void init()
 
 {
+
 GLfloat mat_specular[] = { 1.0, 1.0, 1.0, 1.0 };
 
 GLfloat mat_shininess[] = { 50.0 };
@@ -167,6 +170,7 @@ glEnable(GL_DEPTH_TEST);
 int main(int argc,char** argv)
 
 {
+
 glutInit(&argc,argv);
 
 glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH);
@@ -186,4 +190,5 @@ glutSpecialFunc(specialkeys);
 glutMainLoop();
 
 return 0;
+
 }
