@@ -39,7 +39,6 @@ else if(key==GLUT_KEY_PAGE_UP)
 else if(key==GLUT_KEY_PAGE_DOWN)
 
     rotate_z-=5;
-    
 glutPostRedisplay();
 
 }
@@ -58,14 +57,13 @@ glRotatef(rotate_y,0.0,1.0,0.0);
 
 glRotatef(rotate_z,0.0,0.0,1.0);
 
-
 glBegin(GL_POLYGON);
 
 glColor3f( 1.0, 0.0, 0.0 );
 
-glVertex3f(0.5, 0.5, -0.5); 
+glVertex3f(0.5, 0.5, -0.5);  
 
-glVertex3f(0.0,0.0,0.0);   
+glVertex3f(0.0,0.0,0.0);      
 
 glVertex3f(-0.5,0.5,-0.5);  
 
@@ -132,7 +130,6 @@ glutSwapBuffers();
 void init()
 
 {
-
 GLfloat mat_specular[] = { 1.0, 1.0, 1.0, 1.0 };
 
 GLfloat mat_shininess[] = { 50.0 };
@@ -170,7 +167,6 @@ glEnable(GL_DEPTH_TEST);
 int main(int argc,char** argv)
 
 {
-
 glutInit(&argc,argv);
 
 glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH);
